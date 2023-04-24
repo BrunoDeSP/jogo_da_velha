@@ -1,0 +1,166 @@
+@charset 'UTF-8';
+
+/* 
+||  GLOBAL SETTINGS  || 
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    width: 500px;
+    height: 500px;
+    background: coral;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px rgb(0 0 1/ 70%);
+}
+
+/*
+||  SQUARES  ||
+*/
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: coral;
+    border: none;
+}
+
+.square--two,
+.square--four,
+.square--six,
+.square--eight { 
+    background: wheat;
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+}
+
+/* 
+||  INDIVIDUAL SQUARES  || 
+*/
+
+.square--one {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.square--two {
+    border-bottom: none;
+}
+
+.square--three {
+    border-radius: 0px 5px 0px 0px;
+}
+
+.square--four {
+    border-right: none;
+}
+
+.square--five {
+    border: 0.5px solid rgba(0, 0, 0, 0.6);
+}
+
+.square--six {
+    border-left: none;
+}
+
+.square--seven {
+    border-radius: 0px 0px 0px 5px;
+}
+
+.square--eight {
+    border-top: none;
+}
+
+.square--nine {
+    border-radius: 0px 0px 5px 0px;
+}
+
+/* 
+||  FIGURES OF BUTTONS  || 
+*/
+
+.circle{
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    border: 0px solid black;
+    transition: width, height, transform, border;
+    transition-duration: .6s;
+    transition-delay: 0s, 0s, 0s, .1s;
+    transform: scale(0);
+}
+
+.activeCircle .circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 20px solid black;
+    transform: scale(1);
+}
+
+.crucifix {
+    display: flex;
+    position: relative;
+    width: 0;
+    height: 95%;
+    align-items: center;
+    transition-duration: transform;
+    transition-duration: .1s;
+    transition-delay: .3s;
+    transform: scale(0);
+}
+
+.crucifix::before, .crucifix::after {
+    content: "";
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    transition-property: transform;
+    transition-duration: .3s;
+    transform: rotate(0deg);
+}
+
+.activeCrucifix .crucifix {
+    width: 95%;
+    transform: scale(1);
+    transition-duration: transform;
+    transition-duration: .1s;
+    transition-delay: 0s;
+}
+
+.activeCrucifix .crucifix::before {
+    transform: rotate(45deg);
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-duration: .3s;
+}
+
+.activeCrucifix .crucifix::after {
+    transform: rotate(-45deg);
+    transition-property: transform;
+    transition-delay: .2s;
+    transition-duration: .3s;
+}
+
+
+
