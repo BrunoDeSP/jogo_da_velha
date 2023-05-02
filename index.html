@@ -9,46 +9,75 @@
 </head>
 <body>
     <main class="main">
-        <div class="content">
-        <button class="square square--one" onclick="trocar('one')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--two" onclick="trocar('two')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--three" onclick="trocar('three')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--four" onclick="trocar('four')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--five" onclick="trocar('five')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--six" onclick="trocar('six')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--seven" onclick="trocar('seven')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--eight" onclick="trocar('eight')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
-            <button class="square square--nine" onclick="trocar('nine')">
-                <span class="circle"></span>
-                <span class="crucifix"></span>
-            </button>
+        <div class="header">
+            <span class="scoreboard"><p>0</p></span>
+            <span class="scoreboard"><p>0</p></span>
         </div>
-        <button onclick="reiniciar()">Reinicar</button>
+        <div class="content">
+            <div class="content__game">
+                <button class="square square--one" onclick="trocar('one')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--two" onclick="trocar('two')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--three" onclick="trocar('three')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--four" onclick="trocar('four')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--five" onclick="trocar('five')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--six" onclick="trocar('six')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--seven" onclick="trocar('seven')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--eight" onclick="trocar('eight')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+                <button class="square square--nine" onclick="trocar('nine')">
+                    <span class="circle"></span>
+                    <span class="crucifix"></span>
+                </button>
+            </div>
+            <button class="btn--restart" onclick="reiniciar()">Reiniciar</button>
+        </div>
+        <div class="footer">            
+            <a class="footer__link footer__link--first" href="">
+                <ion-icon class="icon" name="logo-github"></ion-icon>
+                <p class="text__link">Github</p>
+            </a>
+            <a class="footer__link" href="">
+                <ion-icon class="icon" name="code-slash"></ion-icon>
+                <p class="text__link">Codigo do Projeto</p>
+            </a>
+            <a class="footer__link" href="">
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                <p class="text__link">Instagram</p>
+            </a>
+            <a class="footer__link" href="">
+                <ion-icon class="icon" name="logo-linkedin"></ion-icon>    
+                <p class="text__link">Linkedin</p>
+            </a>
+        </div>
     </main>
     <script src="script.js"></script>
+
+    <!-- Library Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

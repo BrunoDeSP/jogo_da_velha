@@ -2,12 +2,18 @@ Ao clicar em um quadrinho preciso
 
 (x) preencher com uma forma geometrica
 (x) Verificar de quem é a vez
-() Verificar se ja esta preenchido
-
--   fazer uma busca no array utilizando a const figure 
-    então utilizar o numero adquirido no array 
-    para utilizar na função verificar
-
-() Verificar se foi o ultimo a ser preenchido
+(x) Verificar se ja esta preenchido
+(x) Verificar se foi o ultimo a ser preenchido
 () Verificar se o jogo ja acabou
+
+- valores que ganham
+
+1-2-3
+4-5-6
+7-8-9
+1-4-7
+2-5-8
+3-6-9
+1-5-9
+3-5-7
 

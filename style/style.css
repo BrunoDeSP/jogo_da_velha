@@ -12,19 +12,61 @@
 
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     overflow-y: hidden;
 }
 
+/* 
+||  MAIN CONTAINERS  ||
+*/
+
+.header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 130px);
+    align-items: center;
+}
+
+
+
+/* 
+||  HEADER  ||
+*/
+
+.scoreboard {
+    display: flex;
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    background: khaki;
+}
+
+
+/* 
+||  CONTENT  || 
+*/
+
+.content__game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 0px;
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     background: coral;
     border-radius: 5px;
     box-shadow: 0px 1px 8px rgb(0 0 1/ 70%);
@@ -91,6 +133,22 @@
 .square--nine {
     border-radius: 0px 0px 5px 0px;
 }
+
+/* 
+||  BUTTON REINICIAR  || 
+*/
+
+.btn--restart {
+    border: none;
+    border-radius: 15px;
+    background: #4747ff;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
 
 /* 
 ||  FIGURES OF BUTTONS  || 
@@ -160,6 +218,59 @@
     transition-property: transform;
     transition-delay: .2s;
     transition-duration: .3s;
+}
+
+
+/* 
+||  FOOTER  || 
+*/
+
+.footer {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+
+/* 
+||  ICONS FOOTER  ||
+ */
+
+
+.footer__link {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    color: #000;
+    text-decoration: none;
+    background: gray;
+}
+
+.footer__link:hover .text__link {
+    display: block;
+    width: auto;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.footer__link:hover {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.text__link {
+    display: none;
+    width: 0px;
+    margin-left: 5px;
 }
 
 
